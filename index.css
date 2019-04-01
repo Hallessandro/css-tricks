@@ -25,11 +25,13 @@ body {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .header-text {
     color: #fff;
     text-transform: uppercase;
+    margin: 40px;
 }
 
 .header-text-main {
@@ -50,6 +52,31 @@ body {
 
     animation-name: moveToTop;
     animation-duration: 1s;
+}
+
+.btn:link,
+.btn:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 40px;
+    border-radius: 100px;
+    transition: all .2s; /* A animação só vai ser feita nos outros eventos, porém precisa ser declarada na criação do elemento */
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(250, 249, 249, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(250, 249, 249, 0.2);
+}
+
+.btn-white {
+    background-color: #fff;
+    display: inline-block;
+    color: #777;
 }
 
 @keyframes moveToLeft {
